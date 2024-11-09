@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "type": "pull",
+     
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    },
+    "auth_backend": {
+      "candid": "src/auth_backend/auth_backend.did",
+      "package": "auth_backend",
+      "type": "rust"
+    },
+    "auth_frontend": {
+      "dependencies": ["auth_backend"],
+      "source": ["src/auth_frontend/dist"],
+      "type": "assets",
+      "workspace": "auth_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

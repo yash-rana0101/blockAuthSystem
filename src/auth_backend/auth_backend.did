@@ -1,0 +1,13 @@
+// src/auth_backend/auth_backend.did
+type UserProfile = record {
+    principal_id: principal;
+    is_authenticated: bool;
+    timestamp: nat64;
+};
+
+service : {
+    "login": (principal) -> (UserProfile);
+    "get_user": (principal) -> (opt UserProfile) query;
+    "logout": (principal) -> (bool);
+    "is_session_valid": (principal) -> (bool) query;
+}

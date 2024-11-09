@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  background: #000;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 25vw;
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  margin: 10px auto;
+  float: right;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.headname{
+  font-size: 2rem; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.address{
+  font-size: 1rem; 
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.Card{
+  color: rgb(255, 255, 255);
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(rgb(0, 85, 100),black,rgb(0, 85, 100));
+  padding: 20px;
+  border: 5px solid;
+  border-color: rgb(49, 238, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Card :hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+.desc{
+  font-size: .9rem;
+  font-weight: bold;  
+  text-align: center;
+  color: aliceblue;
+}
+
+.descspan{
+  color: #33e0ff;
+}
+
+.addrss{
+  font-size: 0.9rem;
+  text-align: center;
+  color: #33e0ff;
+}
+
+.authas{
+  font-size: .9rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn{
+  display: flex;
+  background-color: #33e0ff;
+  color: #000000;
+  padding: 10px 20px; 
+  border: none;
+  font-weight:800;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #000000;
+  color: #33e0ff;
+  border: 2px solid #33e0ff;
+}
